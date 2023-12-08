@@ -16,7 +16,7 @@ int main()
 
     for (int idx = 0; idx < BUFFER_SIZE; idx++)
     {
-        printf("array[%d] = %d\n", idx, array[idx]);
+        // printf("array[%d] = %d\n", idx, array[idx]);
     }
 
 #if 0
@@ -37,6 +37,14 @@ int main()
     {
         printf("array[%d] = %d\n", idx, array[idx]);
     }
+#endif
+
+#if 1
+    printf("array[-1]%d\n",array[-1]);
+    printf("array[10]%d\n",array[10]);
+ 
+
+
 #endif
     return 0;
 }

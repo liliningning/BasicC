@@ -4,7 +4,7 @@
 
 int main()
 {
-#if 1
+#if 0
     int age = 6;
     int len = sizeof(age);
     printf("len %d, age = %d\n", len, age);
@@ -90,10 +90,15 @@ int main()
 
 #endif
 
-#if 0
+#if 1
 /*左移 右移*/   
-    // int a = 5 << 1;
-    // printf("a : %d\n",a);
+    int a = 5 << 2;
+    printf("a : %d\n",a);
+   
+    int b = 14 > 2;
+    printf("b : %d\n",b);
+
+
 
 #endif
 

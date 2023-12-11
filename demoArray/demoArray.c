@@ -39,7 +39,7 @@ int main()
     }
 #endif
 
-#if 1
+#if 0
     printf("array[-1]%d\n",array[-1]);
     printf("array[10]%d\n",array[10]);
  

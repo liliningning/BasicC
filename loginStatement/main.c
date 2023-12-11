@@ -68,7 +68,7 @@ int main()
 #endif
 
 #if 0
-    // switch
+    // swtch
     // 每个case 都对应 一个break;
     // case 里面的语句过多 一定加上 {}来包含 ;
     // 一个函数里面代码的范围 在 80 ~ 120 之间；
@@ -128,6 +128,7 @@ int main()
         printf("randomNum : %d\n", randomNUm);
     }
 
+
 #endif
 
 #if 0
@@ -139,14 +140,30 @@ int main()
      printf("varaNum : \n",varaNum);
     /* code */
    } while (varaNum);
+   
+
+
+
+
+
 
 #endif
 
-#if 0
-    int i = 5;
-    printf("a %d\n", i--);
-    printf("a1 %d\n", i);
-    printf("b %d\n", --i);
-     return 0;
-#endif     
+#if 1
+
+int idx = 1;
+int num = idx--;
+int num1= --idx;
+printf("num %d\n,num1 %d\n",num,num1);
+
+
+
+
+
+#endif
+
+
+
+
+return 0;
 }

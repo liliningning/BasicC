@@ -82,26 +82,27 @@ int main()
     printf("name: %s\n",name);
 
 #endif
-#if 0
+#if 1
 //给字符串赋值
     char *ptr2 = NULL;
 #if 1
-    //  ptr2 = "zhangsan";
-#else
-    strcpy(ptr2,"zhangsan");
+     ptr2 = "zhangsan";
+    printf("&(zhangsan) : %p\n",&("zhangsan"));  //地址
+    printf("ptr:%p\n",ptr2); //ptr 的地址
+    // strcpy(ptr2,"zhangsan");
 #endif    
-   // printf("ptr2 :%s\n",ptr2);
+   printf("ptr2 :%s\n",ptr2); 
 
 #endif
 
 
 /*堆空间*/
-
+#if 0
 /*void *   是一个指针  这个指针被称为万能指针 */
     char *ptr = (char *)malloc(sizeof(char) * BUFFER_SIEZ);
     strcpy(ptr,"zhangsan");
     printf("ptr2 :%s\n",ptr);
-
+#endif
 
 
     return 0;

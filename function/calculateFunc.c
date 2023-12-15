@@ -2,6 +2,7 @@
 
 /*  源文件（.c）是函数的实现*/
 
+#if 1
 typedef enum STATUS_CODE
 {
     ON_SUCCESS,
@@ -36,3 +37,8 @@ int calculateDiv(int num1, int num2)
     }
     return num1 / num2;
 }
+#endif
+
+
+
+

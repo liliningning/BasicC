@@ -9,7 +9,7 @@ int main()
     // 字符串常量 什么是字符串常量
     // 打印字符串的每一个字符
     // 使用for循环
-#if 0
+#if 1
     int len = strlen(ptr);
     printf("len: %d\n",len);
     char p = '0';

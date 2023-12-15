@@ -1,8 +1,7 @@
 #ifndef _CALCULATE_FUNC_H_
 #define _CALCULATE_FUNC_H_
-
 /*避免头文件重复包含 （.h）     头文件一般是函数的声明     不要将头文件放在这里面 */
-
+#if 0
 /*加法*/
 int calculateAdd(int num1, int num2);
 
@@ -14,6 +13,9 @@ int calculateMul(int num1, int num2);
 
 /*除法*/
 int calculateDiv(int num1, int num2);
+#endif
+
+
 
 
 #endif

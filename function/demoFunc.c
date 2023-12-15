@@ -61,6 +61,27 @@ int myAddNum2(int num1 ,int num2)
 }
 
 #endif
+#if 1
+
+/*函数指针*/
+void  printStr()
+{
+
+    printf("hello world\n");
+
+
+}
+
+
+
+
+#endif
+
+
+
+
+
+
 
 int main()
 {
@@ -90,6 +111,7 @@ int main()
     // 判断所占空间的大小 sizeof
 #endif
 
+#if 0
     int num1 = 50;
     int num2 = 60;
     int sum = calculateAdd(num1, num2);
@@ -105,4 +127,22 @@ int main()
     printf("num4 %d\n", num4);
 
     return 0;
+#endif 
+
+
+
+int choice = 0;
+
+/*函数指针就是钩子函数 主要用在回调函数*/
+/*函数指针*/
+void (*func)() = printStr;
+func();
+if(choice  == 1)
+{
+    printStr();
+
+}
+
+return 0;
+
 }

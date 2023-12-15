@@ -30,10 +30,10 @@ int main()
     printf("ptr : %p\n",ptr);
 
 #else
-    int **ptr = &p;
-    printf("ptr : %p\n",ptr);
-    printf("*ptr %p\n",*ptr);
-    printf("*(*ptr)%d\n",*(*ptr));
+    // int **ptr = &p;
+    // printf("ptr : %p\n",ptr);
+    // printf("*ptr %p\n",*ptr);
+    // printf("*(*ptr)%d\n",*(*ptr));
 
 #endif
 
@@ -66,7 +66,7 @@ int main()
     printf("len %d\n",len);
 #endif
 
-#if 0
+#if 1
   /*指针的特性2：  指针和字符串的结合*/  
 
     /*字符串 是区别于字符数组的*/
@@ -77,23 +77,24 @@ int main()
      printf("len1: %d\n",len1);
 
 //字符数组赋值
-    char name[BUFFER_SIEZ] = { 0};
+    char name[BUFFER_SIEZ] = { 0 };
     strcpy(name,"zhangsan");
     printf("name: %s\n",name);
 
 #endif
-#if 1
+#if 0
 //给字符串赋值
     char *ptr2 = NULL;
-#if 1
+#endif
+#if 0
      ptr2 = "zhangsan";
     printf("&(zhangsan) : %p\n",&("zhangsan"));  //地址
-    printf("ptr:%p\n",ptr2); //ptr 的地址
+    printf("ptr:%d\n",*ptr2); //ptr 的地址
     // strcpy(ptr2,"zhangsan");
 #endif    
-   printf("ptr2 :%s\n",ptr2); 
+//    printf("ptr2 :%s\n",ptr2); 
 
-#endif
+
 
 
 /*堆空间*/

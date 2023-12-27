@@ -19,7 +19,7 @@ int main()
         // printf("array[%d] = %d\n", idx, array[idx]);
     }
 
-#if 0
+#if 1
     // 地址
     // 数组的首地址和数组第一个元素的地址是一样的
     printf("%p\n", array);

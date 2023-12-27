@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+// #include "demoString.h"
 
 
 
@@ -26,3 +28,8 @@ int main()
     
     return 0;
 }
+
+// int strlen(const char *ptr)
+// {
+//     return 0;
+// }

@@ -4,20 +4,20 @@
 int main()
 {
 
-#if 0
+#if 1
     // 获取多少个元素 ： 数组的长度 除以每个元素的长度
     char array[BUFFER_SIZE] = {0};
     int arrayLen = sizeof(array);
-    printf("arraayLen%d\n", arrayLen);
+    printf("arraayLen:%d\n", arrayLen);
 
     int elemtLen = sizeof(array[0]);
-    printf("elemtLen%d\n", elemtLen);
+    printf("elemtLen:%d\n", elemtLen);
 
     int length = arrayLen / elemtLen;
-    printf("length%d\n", length);
+    printf("length:%d\n", length);
 #endif
 
-#if 0
+#if 1
 
     char pNum = 'a';
     printf("pNum: %c\n", pNum);

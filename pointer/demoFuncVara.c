@@ -8,7 +8,7 @@
 需求实现两个数的交换
 */
 /*值传递*/
-#if 0
+#if 1
 void swapSurfaceData(int val1, int val2)
 {
     int temp = val1;

@@ -3,14 +3,14 @@
 // 全局变量 定义必须以g开头  定义在函数外部 作用域是程序（进程）退出或者结束才失效
 
 int g_num = 10;
-static int g_vara = 20; // 静态全局变量  生命周期和全局变量相同 
+static int g_vara = 20; // 静态全局变量  生命周期和全局变量相同
 int main()
 { // 变量定义在函数内部是局部变量 作用域是离开函数就失效
   // 在栈空间开辟的内存 不得超过8M,如果超过会产生栈溢出 （stack  overflow )
-    int localVara = 5;
+  int localVara = 5;
 
-    return 0;
-}
+  return 0;
+}1
 
 // 时间和空间  时间就是代码快 效率高
 // 空间就是内存的大小

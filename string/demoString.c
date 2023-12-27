@@ -6,14 +6,14 @@
 int main()
 {
 
-#if 0
+#if 1
 
     int array[BUFFER_SIEZ];
     memset(array, 0, sizeof(array));
 
 #endif
 
-#if 0
+#if 1
     /*字符串(字符数组)*/
     char array[BUFFER_SIEZ] = "hello world";
     /*strlen */

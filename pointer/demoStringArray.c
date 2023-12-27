@@ -15,11 +15,11 @@ int main()
 
 #endif           
 
-#if 0 //数组和指针
+#if 0//数组和指针
     char name[BUFFER_SIEZ];
     memset(name,0,sizeof(name));
     // name = "zhangsan"  //错误  不能直接赋值
-    strncpy(name, "zhangsan" ,0,sizeof(name) - 1);
+    strncpy(name, "zhangsan", sizeof(name) - 1);
     printf("name: %s\n",name);
 
 
@@ -27,17 +27,17 @@ int main()
     name[1] = 'H';
     printf("name:%s\n",name);
 
-    //指针数组不分家
+    指针数组不分家
     printf("*(name + 2): %c\n",*(name + 2));
     *(name + 2) = 'A';
     printf("name:%s\n",name);
 
-  //  name[x] = *(name + x)   //x就是常量
+ name[x] = *(name + x)   //x就是常量
 
 
 #endif
 
-#if 0
+#if 1
 //字符串 存在全局区
 
 char *ptr = "zhangsan";
@@ -46,10 +46,10 @@ char *ptr = "zhangsan";
  //ptr[1] = *(ptr + 1)
 
 
- printf("*(ptr + 2) : %c\n",*(ptr + 2));
+//  printf("*(ptr + 2) : %c\n",*(ptr + 2));
 
- ptr[2] = 'Z';
- printf("ptr: %c",ptr[0]);
+//  ptr[2] = 'Z';
+//  printf("ptr: %c",ptr[0]);
  
  /*字符数组 和字符串的区别
  1. 字符数组存放在栈区  存储的值可以被修改
@@ -73,6 +73,7 @@ char *ptr = "zhangsan";
     array[3] = "hello";
     array[4] = "hello";
     array[5] = "world";
+#if 0
     for(int idx = 0; idx < BUFFER_SIEZ; idx++)
     {
         printf("array[%d] = %s\n",idx,array[idx]);
@@ -82,8 +83,18 @@ char *ptr = "zhangsan";
   1. 是一个数组
   2. 存放的是字符串
           */
+#endif
+
+
+
 //二维数组
+printf("array[0]: %s\n",array[0]);
+printf("array[0]: %s\n",*(array + 0));
 printf("array[0][0]: %c\n",array[0][0]);
+printf("array[0][1]: %c\n",*(*(array + 0) + 1));
+
+array[1] = *(array + 1)
+array[0][1] = *(*(array + 0) + 1) = *((array[0]) + 1)
 
 #endif
 

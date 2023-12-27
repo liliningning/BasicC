@@ -74,8 +74,8 @@ int main()
 
 #if 0
    int m_value = 10;
-   int dicuss = m_value /3;
-   int remainder = m_value % 3;
+   int dicuss = m_value /3;     /* 求商 */
+   int remainder = m_value % 3; /* 求余 */
 
    printf("dicuss %d\n",dicuss);
    printf("remainder %d\n",remainder);

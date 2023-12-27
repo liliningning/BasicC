@@ -38,7 +38,7 @@ int main()
 #endif
 
 #endif
-#if 0
+#if 1
 
 /*指针的特性
     指针占的内存大小是8个字节（64位操作系统） 4个字节（32位操作系统）*/
@@ -82,11 +82,11 @@ int main()
     printf("name: %s\n",name);
 
 #endif
-#if 0
+#if 1
 //给字符串赋值
     char *ptr2 = NULL;
 #endif
-#if 0
+#if 1
      ptr2 = "zhangsan";
     printf("&(zhangsan) : %p\n",&("zhangsan"));  //地址
     printf("ptr:%d\n",*ptr2); //ptr 的地址
